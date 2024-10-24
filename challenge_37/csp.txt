@@ -1,0 +1,11 @@
+script-src 'self' 'nonce-76e0df49eb4a82e381b2318d459d3549';
+default-src 'self';
+base-uri 'self';
+font-src 'self' https: data:;
+form-action 'self';
+frame-ancestors 'self';
+img-src 'self' data:;
+object-src 'none';
+script-src-attr 'none';
+style-src 'self' https: 'unsafe-inline';
+upgrade-insecure-requests
