@@ -7,4 +7,7 @@
   {'id':25012,'first_name':'Kirk','last_name':'Benjo','rank':9,'games_won':13,'games_loss':10}
 ]
 
-[{'id':25022,'first_name':'Dave','last_name':'Moses','rank':6,'games_won':3,'games_loss':16},{'id':25012,'first_name':'Kirk','last_name':'Benjo','rank':9,'games_won':13,'games_loss':10},
+[{
+  'id':25022,'first_name':'Dave','last_name':'Moses','rank':6,'games_won':3,'games_loss':16},
+  {'id':25012,'first_name':'Kirk','last_name':'Benjo','rank':9,'games_won':13,'games_loss':10}
+]
