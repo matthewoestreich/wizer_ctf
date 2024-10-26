@@ -50,7 +50,7 @@ The second request will generate XML that looks like this: (note the contents of
 </userInfo>
 ```
 
-GitHub isn't displaying the commenting correctly, but focus on the line below.. The second request we send it crafted in such a way that we comment out the 'role' entity only to overwrite it with our own injected entity..
+GitHub isn't displaying the commenting correctly, but focus on the line below.. The second request we send is crafted in such a way that we comment out the 'role' entity only to overwrite it with our own injected entity..
 
 ```xml
 <!--"><!ENTITY role "role">--><!ENTITY role SYSTEM "/tmp/last_req.log">
