@@ -7,7 +7,7 @@ First send a request with a bad apiKey to generate log file. Then read log file 
 The issue is how they are replacing strings in the xml file. You want to create an entity that is able to read a local file (the log file).
 
 ```
-### Flag is apiKey really is H858FDSKL49FK09K4590KFK2390KCFVC12
+### Flag really is H858FDSKL49FK09K4590KFK2390KCFVC12
 
 ### First send the first request
 ### Second send the second request
