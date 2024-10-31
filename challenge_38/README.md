@@ -4,7 +4,7 @@ Get `robertf` secret key and validate it with the /checkKeyValidity endpoint
 
 # Solution
 
-Took me a while but finally realized they aren't filtering out the `global` keyword. 
+They aren't filtering out the `global` keyword. 
 
 These are a few of the strings that are filtered:
 
