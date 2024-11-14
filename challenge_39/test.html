@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Secret Chatroom</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+		<style>
+			body {
+				background-color: #333;
+				color: #eee;
+			}
+			.chat-container {
+				max-width: 800px;
+				margin: 50px auto;
+				background: rgba(0, 0, 0, 0.8);
+				padding: 20px;
+				border-radius: 10px;
+			}
+			.messages {
+				height: 400px;
+				overflow-y: scroll;
+				border: 1px solid #444;
+				padding: 15px;
+				border-radius: 5px;
+				background-color: #222;
+			}
+			.message-input {
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chat-container">
+			<h3 class="text-center text-light">🔒 Secret Chatroom 🔒</h3>
+			<div id="messages" class="messages"></div>
+			<form id="chat-form" class="message-input">
+				<div class="form-group">
+					<input type="text" id="username" class="form-control" placeholder="Your Username" required />
+				</div>
+				<div class="form-group">
+					<label for="icon" class="text-light">Choose an Icon (Optional)</label>
+					<select id="icon" class="form-control">
+						<option value="">Default</option>
+						<option value="🔥">🔥 Fire</option>
+						<option value="💀">💀 Skull</option>
+						<option value="👽">👽 Alien</option>
+						<option value="🌈">🌈 Rainbow</option>
+						<option value="⚡">⚡ Lightning</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="text" id="message" class="form-control" placeholder="Type a message..." required />
+				</div>
+				<button id="sendbtn" class="btn btn-primary btn-block">Send</button>
+			</form>
+		</div>
+
+		<script>
+			const socket = io();
+
+			const messages = document.getElementById("messages");
+			const chatForm = document.getElementById("chat-form");
+			const usernameInput = document.getElementById("username");
+			const iconInput = document.getElementById("icon");
+			const messageInput = document.getElementById("message");
+			const urlParams = new URLSearchParams(window.location.search);
+
+			//chatForm.addEventListener("submit", (e) => {
+      document.getElementById("sendbtn").addEventListener("click", e => {
+				e.preventDefault();
+				const user = usernameInput.value.trim();
+				const icon = iconInput.value; // Get selected icon value
+				const text = messageInput.value.trim();
+				if (!user || !text) return;
+				//socket.emit("chat message", { user, icon, text });
+				messageInput.value = "";
+			});
+
+			socket.on("message", (msg) => {
+				const user = msg.user;
+				const text = msg.text;
+				let icon = msg.icon;
+				if (icon.emoji == "") {
+					icon = window.defaultIcon || { emoji: "🏴" };
+				}
+
+				const messageElement = document.createElement("div");
+				messageElement.classList.add("message");
+				const displayName = icon ? `${icon.emoji} ${user}` : user;
+				messageElement.innerHTML = `<strong>${displayName}:</strong> ${text}`;
+				messages.appendChild(messageElement);
+				messages.scrollTop = messages.scrollHeight; // Auto-scroll to the latest message
+			});
+
+			const queryMessages = urlParams.get("messages").split(",");
+			usernameInput.value = urlParams.get("username") || usernameInput.value;
+
+			for (let i = 0; i < queryMessages.length; i++) {
+				messageInput.value = queryMessages[i];
+				chatForm.dispatchEvent(new Event("submit"));
+			}
+		</script>
+	</body>
+</html>
