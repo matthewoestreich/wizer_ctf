@@ -1,0 +1,32 @@
+@url = https://chal40-hjnf895.vercel.app
+@validApiString = ".POSTCRMEntities.POST"
+
+POST {{url}}/callApi HTTP/1.1
+Content-Type: application/json
+
+{
+  "api": ".POSTgetuser.POST",
+  "userId": "670b0741-9fb1-4ef7-afe9-842120a12fcb"
+}
+
+###
+
+POST {{url}}/callApi HTTP/1.1
+Content-Type: application/json
+
+{
+  "api": ".POSTgetuser.POST",
+  "userId": "670b0741-9fb1-4ef7-afe9-842120a12fcb"
+}
+
+###
+
+POST {{url}}/callApi HTTP/1.1
+Content-Type: application/json
+
+{
+  "api": ".POSTgetcompanies.POST",
+  "companyId": "{{ omitted }}"
+}
+
+###
