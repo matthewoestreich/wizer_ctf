@@ -12,7 +12,7 @@ We can do this because the validation function calls `JSON.stringify` to run val
 
 From there it was just trying a ton of diff payloads..
 
-### Getting Close
+## Getting Close
 
 This payload worked on my local Mongo install, but for some reason, kept error out due to bad `$options` flag:
 
@@ -24,7 +24,7 @@ This payload worked on my local Mongo install, but for some reason, kept error o
 
 It was extremely frustrating to see it work locally but not on the CTF....
 
-### Almost
+## Almost
 
 I stumbled upon this regex (`"(?i)a(?-i)cme"`), that essentially says to match anything that starts with `"a"` (case-insensitive) and ends in `"cme"`.  The `(?i)` is the start of the case-insensitive search and the `(?-i)` is the end of the search. Therefore, only `"a"` is allowed to be case-insensitive.
 
@@ -32,7 +32,7 @@ I wound up finding this query on MongoDB's website, of all places... Thanks Mong
 
 ![Thanks Mongo](/challenge_41/thanksMongo.png "Thanks for the query Mongo!")
 
-### Finally
+## Finally
 
 Since the query I found essentially says "any character between these two 'flags'", I wondered if providing no characters meant all characters would pass, and bam, sure enough.
 
@@ -44,6 +44,6 @@ Just had to make sure to cover the length and UUID validations. Conveniently, th
 }
 ```
 
-### Goodnight
+## Goodnight
 
 The biggest flaw in this implementation is passing in the original `request.body.company_id` payload into the query itself. Even after validation, the "sanitized" payload is discarded. Which blows my mind.
