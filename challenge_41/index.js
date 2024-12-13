@@ -9,7 +9,7 @@ async function testQuery(mockRequest) {
     const db = client.db("challenge_41");
     const qry = { company_id: mockRequest.body.company_id };
     console.log(qry)
-    const all = await db.collection("companies").find({ company_id: { '$regex': '$', '$options': 'iiii-iadfafasdfasfsdi-i-iii' } }).toArray();
+    const all = await db.collection("companies").find({ company_id: mockRequest.body.company_id }).toArray();
     console.log(all);
   } catch (e) {
     console.error(`ERROR`, e);
