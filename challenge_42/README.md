@@ -12,7 +12,7 @@ I knew the overall objective was to force a field to evaluate to 'undefined' for
 
 For the longest time I thought it was a prototype pollution vuln (via the 'value' field using 'valueOf' inside injected `__proto__`). So I messed with that for like two hours.
 
-### Getting Close
+## Getting Close
 
 Then I actually took a step back and realized that after cleaning up `field` (which gets stored as `fieldName`) we use `fieldName` to validate available fields, but still use `field` within the `filter` function.. 
 
@@ -40,7 +40,7 @@ app.post("/filterCRMUsers", function (req, res) {
 });
 ```
 
-### 💡
+## 💡
 
 Then the lightbult turned on... in the `filter` function we are checking each CRMUser via bracket notation, which means there will be coercion.
 
@@ -66,7 +66,7 @@ const field = ["name",""]; // coerced into `"name",`
 console.log(data[field]); // -> undefined
 ```
 
-### Finally
+## Finally
 
 So therefore if we send our payload as...
 
