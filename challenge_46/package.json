@@ -1,0 +1,15 @@
+{
+  "name": "challenge_46",
+  "version": "1.0.0",
+  "description": "Get the Id of the second user from the API, given the email address is: je**a@example.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
