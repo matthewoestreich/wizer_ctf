@@ -8,6 +8,7 @@ for (let i = 0; i < firstIds.length; i++) {
   const s = secondIds[i];
   if (f.email !== s.email) {
     console.log(`emails don't match ${f.email} | ${s.email}`);
+    break;
   }
   if (f.id === s.id) {
     console.log(`found matching ids!!!`, f, s);

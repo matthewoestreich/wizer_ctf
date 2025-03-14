@@ -7,7 +7,7 @@ import path from "node:path";
 // Run this second then run `compareIds.js`
 //getAndSaveIds("./ids-2.json").then(() => console.log("Done.")).catch((e) => console.log(`Something went wrong!`, e));
 
-async function getAndSaveIds(toPath) {
+async function getAndSaveIds(saveToFilePath) {
 	const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
 	const results = [];
 
@@ -19,7 +19,7 @@ async function getAndSaveIds(toPath) {
 		}
 	}
 
-	fs.writeFileSync(path.resolve("./ids-2.json"), JSON.stringify(results, null, 2));
+	fs.writeFileSync(path.resolve(saveToFilePath), JSON.stringify(results, null, 2));
 
 	async function getId(email) {
 		const url = "https://chal46-hj89458.vercel.app/getId";
