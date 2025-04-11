@@ -1,12 +1,3 @@
-# Ignore non-retired challenges
-
-**/challenge_43/
-**/challenge_44/
-**/challenge_45/
-**/challenge_46/
-**/challenge_47/
-**/challenge_48/
-
 # Logs
 logs
 *.log
