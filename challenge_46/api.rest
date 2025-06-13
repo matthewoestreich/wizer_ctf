@@ -1,0 +1,18 @@
+@url = https://chal46-hj89458.vercel.app/
+
+POST {{url}}/getId HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "jebca@example.com"
+}
+
+###
+
+POST {{url}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "a",
+  "password": "a"
+}

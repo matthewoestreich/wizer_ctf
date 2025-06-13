@@ -1,0 +1,1 @@
+module.exports.getFlag = "i am the flag"

@@ -1,0 +1,47 @@
+[
+  {
+    "email": "jebba@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 418.808618
+  },
+  {
+    "email": "jebca@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 500.1098999999999
+  },
+  {
+    "email": "jeaca@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 506.579919
+  },
+  {
+    "email": "jecba@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 510.1114259999995
+  },
+  {
+    "email": "jecaa@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 512.1521269999998
+  },
+  {
+    "email": "jecca@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 512.1805100000001
+  },
+  {
+    "email": "jebaa@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 514.857884
+  },
+  {
+    "email": "jeaaa@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 618.462573
+  },
+  {
+    "email": "jeaba@example.com",
+    "result": "Invalid credentials",
+    "timeTaken": 744.380351
+  }
+]
