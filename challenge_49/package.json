@@ -1,0 +1,18 @@
+{
+  "name": "challenge_49",
+  "version": "1.0.0",
+  "description": "With login page https://chal49-dsds35.vercel.app login as a valid user",
+  "main": "challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
