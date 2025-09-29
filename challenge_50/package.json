@@ -1,0 +1,16 @@
+{
+  "name": "challenge_50",
+  "version": "1.0.0",
+  "description": "Uncover the flag by accessing an internal API",
+  "main": "challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.9.0",
+    "express": "^5.1.0"
+  }
+}

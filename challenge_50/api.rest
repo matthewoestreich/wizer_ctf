@@ -1,0 +1,10 @@
+@url = https://chal50-huw742.vercel.app/api/preview-meta/
+
+GET {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "url": "https://chal50-huw742.vercel.app/api/internal/admin/"
+}
+
+###
