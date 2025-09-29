@@ -1,0 +1,17 @@
+{
+  "name": "challenge_52",
+  "version": "1.0.0",
+  "description": "Identify as an admin and get the flag!",
+  "main": "challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
