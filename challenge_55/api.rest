@@ -1,0 +1,15 @@
+@report_url = https://chal55-xccxgd.vercel.app/api/internal-report
+@profile_url = https://chal55-xccxgd.vercel.app/api/profile
+
+GET {{profile_url}}?user=svcvcs
+
+###
+
+POST {{report_url}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "xSessionId": "c3ZjOjE3NTMzNjk5ODg="
+}
+
+###
