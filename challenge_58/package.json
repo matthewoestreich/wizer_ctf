@@ -1,0 +1,18 @@
+{
+  "name": "challenge_58",
+  "version": "1.0.0",
+  "description": "With the chat-bot app in: https://endearing-sundae-c0c441.netlify.app, get the flag and then POST it to /api/submit_flag as {\"flag\":\"...flag...\"} to win!",
+  "main": "challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.20.1"
+  }
+}
