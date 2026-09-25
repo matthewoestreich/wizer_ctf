@@ -1,0 +1,16 @@
+{
+  "name": "challenge_57",
+  "version": "1.0.0",
+  "description": "Inject an alert(\"Wizer\")",
+  "main": "challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
