@@ -1,0 +1,13 @@
+
+@url = https://chal59-barbounia.vercel.app/comment
+
+###
+
+GET {{url}}
+Content-Type: application/json
+
+{
+
+}
+
+###
